@@ -1,0 +1,17 @@
+<script src="https://goodcencoltd2-dev-ed.develop.lightning.force.com/lightning/lightning.out.js"></script>
+
+<div id="lightningLocator"></div>
+
+<script>
+    $Lightning.use("c:embedFlowInExternalWebsiteApp",
+        function() {
+            $Lightning.createComponent(
+                "c:embedFlowInExternalWebsite",
+                { },                  
+                "lightningLocator",   
+                function(cmp) {}
+            );
+        },
+        'https://goodcencoltd2-dev-ed.develop.lightning.force.com/'
+    );
+</script>
